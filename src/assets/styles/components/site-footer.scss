@@ -1,0 +1,91 @@
+.site-footer {
+  width: 100%;
+  background: #1E4843;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 760px) {
+      flex-direction: column;
+    }
+    
+    &_social {
+      display: flex;
+      gap: 25px;
+      padding: 32px 0 34px;
+
+      @media (max-width: 760px) {
+        padding: 40px 0 39px;
+        margin: 0 auto;
+      }
+
+      a {
+        height: 22.69px;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          svg {
+            path {
+              fill: #7FE425;
+              transition: all .4s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+
+    &_pages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 41px;
+      padding: 35px 0 0;
+
+      @media (max-width: 760px) {
+        padding: 0 16px 23px;
+        gap: 65px;
+        row-gap: 21px;
+        width: 328px;
+        margin: 0 auto;
+        border-bottom: 1px solid rgba(232, 237, 236, 0.1);
+      }
+
+      a {
+        color: #FFFFFF;
+        line-height: 18px;
+
+        @media (max-width: 760px) {
+          font-size: 16px;
+          line-height: 20px;
+          margin: 0 auto;
+        }
+
+        &:hover {
+          color: #7FE425;
+          transition: all .2s ease-in-out;
+        }
+      }
+    }
+
+    &_quiz {
+      line-height: 23px;
+      padding: 21px 0 0;
+
+      @media (max-width: 760px) {
+        padding: 27px 0 37px;
+        max-width: 234px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      a {
+        color: #7FE425;
+        border-bottom: 1px solid #7FE425;
+      }
+    }
+  }
+}

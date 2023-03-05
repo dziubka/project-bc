@@ -2,10 +2,57 @@
   width: 100%;
   background: linear-gradient(90.02deg, #EBF9FD 0.01%, #EBFDF5 99.98%);
 
-  &-nav {
+  @media (max-width: 760px) {
+    background: #FFFFFF;
+  }
+
+  &-items {
+    display: flex;
+    padding: 8px 0;
+
+    @media (max-width: 760px) {
+      padding: 17px 16px 12px;
+    }
 
     &_logo {
-        margin: 8px 49px 8px 0;
+      margin: 0 49px 0 0;
+
+      @media (max-width: 760px) {
+        margin: 0;
+      }
+    }
+
+    &_nav {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (max-width: 760px) {
+        display: none;
+      }
+
+      a {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 21px;
+        color: #1E4843;
+
+        &:hover {
+          color: #009F10;
+          transition: all .3s ease-in-out;
+        }
+
+        br {
+          display: none;
+        }
+      }
+
+      &-item {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+      }
     }
   }
 }

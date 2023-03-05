@@ -5,21 +5,23 @@
   font-size: 14px;
   color: #FFFFFF;
 
-  &-nav {
+  &-block {
     display: flex;
     justify-content: space-between;
+    padding: 26px 0 26px;
+    align-items: center;
 
     @media (max-width: 760px) {
       flex-direction: column;
+      padding: 40px 0 40px;
     }
     
     &_social {
       display: flex;
       gap: 25px;
-      padding: 32px 0 34px;
 
       @media (max-width: 760px) {
-        padding: 40px 0 39px;
+        padding-bottom: 39px;
         margin: 0 auto;
       }
 
@@ -39,19 +41,18 @@
       }
     }
 
-    &_pages {
+    &_nav {
       display: flex;
       flex-wrap: wrap;
       gap: 41px;
-      padding: 35px 0 0;
 
       @media (max-width: 760px) {
-        padding: 0 16px 23px;
+        max-width: 328px;
+        padding-bottom: 23px;
         gap: 65px;
         row-gap: 21px;
-        width: 328px;
-        margin: 0 auto;
         border-bottom: 1px solid rgba(232, 237, 236, 0.1);
+        justify-content: center;
       }
 
       a {
@@ -61,7 +62,6 @@
         @media (max-width: 760px) {
           font-size: 16px;
           line-height: 20px;
-          margin: 0 auto;
         }
 
         &:hover {
@@ -72,17 +72,15 @@
     }
 
     &_quiz {
-      line-height: 23px;
-      padding: 21px 0 0;
-
       @media (max-width: 760px) {
-        padding: 27px 0 37px;
+        padding-top: 27px;
         max-width: 234px;
         margin: 0 auto;
         text-align: center;
       }
 
       a {
+        line-height: 23px;
         color: #7FE425;
         border-bottom: 1px solid #7FE425;
       }

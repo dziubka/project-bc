@@ -1,7 +1,7 @@
 <template>
   <main-layout>
     <template #content>
-      <h1>Main Page</h1>
+      <h1>Main page</h1>
     </template>
   </main-layout>
 </template>
@@ -16,5 +16,5 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "@/assets/styles/pages/main-page";
+@import "@/assets/styles/pages/main-page";
 </style>
